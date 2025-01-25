@@ -1,3 +1,6 @@
+ <div class="mt-1">
+        <h1 class="h3 mb-1 text-gray-800">Dashboard</h1>
+ </div>
  <!-- Employees Card Example -->
  <div class="col-xl-3 col-md-6 mb-4">
         <div class="card border-left-primary h-100 py-2">

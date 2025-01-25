@@ -58,13 +58,10 @@
             </nav>
             <!-- Main Content -->
             <div class="container-fluid">
-                <h4 class="mt-4">Dashboard</h4>
-                <p>Welcome to the Teacher Tracker System</p>
-                <hr>
-    
-
+          
                 <!-- Content Cards -->
-                <div class="row">
+                <div class="row mt-5">
+
                 <?php
                     // Whitelist of allowed pages
                     $allowedPages = ['dashboard', 'employee', 'records', 'account'];
@@ -79,15 +76,13 @@
                     include "includes/$page.php";
                     ?>
 
-
-   
                     </div>
 
- </div>
+                    </div>
+            </div>
         </div>
-    </div>
 
-      
+ 
 
 
     <!-- Scripts -->
