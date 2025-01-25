@@ -22,17 +22,17 @@
             </div>
             <hr class="text-white">
             <div class="list-group list-group-flush bg-dark text-white">
-                <a href="#" class="list-group-item list-group-item-action p-3 bg-dark text-white">
+                <a href="?page=dashboard" class="list-group-item list-group-item-action p-3 bg-dark text-white">
                     <i class="bi bi-house-door"></i> <span>Dashboard</span>
                 </a>
-                <a href="#" class="list-group-item list-group-item-action p-3 bg-dark text-white">
+                <a href="?page=employee" class="list-group-item list-group-item-action p-3 bg-dark text-white">
                     <i class="bi bi-person"></i> <span>Employees</span> 
                 </a>
-                <a href="#" class="list-group-item list-group-item-action p-3 bg-dark text-white">
+                <a href="?page=records" class="list-group-item list-group-item-action p-3 bg-dark text-white">
                     <i class="bi bi-file-earmark-text"></i> <span>Records</span>
                 </a>
-                <a href="#" class="list-group-item list-group-item-action p-3 bg-dark text-white">
-                    <i class="bi bi-gear"></i> <span>Settings</span>
+                <a href="?page=account" class="list-group-item list-group-item-action p-3 bg-dark text-white">
+                    <i class="bi bi-person-gear"></i> <span>Account</span>
                 </a>
                 <a href="#" class="list-group-item list-group-item-action p-3 bg-dark text-white">
                     <i class="bi bi-box-arrow-right"></i> <span>Logout</span>
@@ -139,6 +139,32 @@
  </div>
         </div>
     </div>
+
+            <?php 
+
+            if(isset($_GET['page'])){
+                $page = $_GET['page'];
+                switch($page){
+                    case 'dashboard':
+                        include 'includes/dashboard.php';
+                        break;
+                    case 'employee':
+                        include 'includes/employee.php';
+                        break;
+                    case 'records':
+                        include 'includes/records.php';
+                        break;
+                    case 'account':
+                        include 'includes/account.php';
+                        break;
+                    default:
+                        include 'includes/dashboard.php';
+                        break;
+                }
+
+
+            ?>
+
 
     <!-- Scripts -->
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
