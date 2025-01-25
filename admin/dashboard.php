@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="../node_modules/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link href="../assets/css/body.css" rel="stylesheet" />
     <link href="../assets/css/wrapper.css" rel="stylesheet" />
     <title>Dashboard</title>
 
@@ -38,7 +39,7 @@
                 </a>
             </div>
             <div class="text-center mt-4">
-                <button class="btn btn-light rounded-circle" id="sidebarToggle">
+                <button class="btn btn-light rounded-circle" id="sidebarToggle" style="border: none; box-shadow: none; background-color: transparent; color: #ffffff; font-size: 25px;">
                     <i class="bi bi-chevron-left"></i>
                 </button>
             </div>
