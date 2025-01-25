@@ -63,30 +63,20 @@
 
                 <!-- Content Cards -->
                 <div class="row">
-                    <?php 
-                    if (isset($_GET['page'])) {
-                        $page = htmlspecialchars($_GET['page']); // Sanitize input
-                        switch ($page) {
-                            case 'dashboard':
-                                include 'includes/dashboard.php';
-                                break;
-                            case 'employee':
-                                include 'includes/employee.php';
-                                break;
-                            case 'records':
-                                include 'includes/records.php';
-                                break;
-                            case 'account':
-                                include 'includes/account.php';
-                                break;
-                            default:
-                                include 'includes/dashboard.php';
-                                break;
-                        }
-                    } else {
-                        include 'includes/dashboard.php'; // Fallback
-                    }
+                <?php
+                    // Whitelist of allowed pages
+                    $allowedPages = ['dashboard', 'employee', 'records', 'account'];
+
+                    // Determine the requested page or default to 'dashboard'
+                    $page = $_GET['page'] ?? 'dashboard';
+
+                    // Validate the page against the whitelist
+                    $page = in_array($page, $allowedPages, true) ? $page : 'dashboard';
+
+                    // Include the corresponding file
+                    include "includes/$page.php";
                     ?>
+
                 </div>
             </div>
         </div>
