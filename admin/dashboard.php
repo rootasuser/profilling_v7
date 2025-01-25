@@ -8,6 +8,7 @@
     <link href="../node_modules/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet" />
     <link href="../assets/css/body.css" rel="stylesheet" />
     <link href="../assets/css/wrapper.css" rel="stylesheet" />
+    <link href="../assets/css/account.css" rel="stylesheet" />
     <title>Dashboard</title>
 
 </head>
