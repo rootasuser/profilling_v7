@@ -53,7 +53,7 @@
                     <button class="btn btn-primary" id="sidebarToggleTop">
                         <i class="bi bi-list"></i>
                     </button>
-                    <span class="navbar-brand text-white">admin</span>
+                    <span class="navbar-brand text-white fs-6">admin</span>
                 </div>
             </nav>
             <!-- Main Content -->
